@@ -23,3 +23,11 @@ body {
 .carousel-control-prev {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
 }
+
+.product-card:hover {
+  filter: brightness(85%) !important;
+}
+
+.product-card:focus {
+  filter: brightness(70%) !important;
+}

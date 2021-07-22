@@ -11,15 +11,15 @@ function Navbar(props) {
         <div className="collapse navbar-collapse align-self-stretch" id="navbarNavAltMarkup">
           <form className="d-flex my-2 w-100 mx-md-5">
             <div className="input-group">
-              <button className="btn btn-outline-light" type="button" id="button-addon1"><i className="bi bi-search" /></button>
               <input type="text" className="form-control" placeholder="Search" aria-label="Search store" aria-describedby="button-addon1" />
+              <button className="btn btn-outline-light" type="button" id="button-addon1"><i className="bi bi-search" /></button>
             </div>
           </form>
           <div className="navbar-nav ">
-            <a className="nav-link" href="#"><i className="bi bi-bell" /><span className="ms-3 d-sm-inline-block d-md-none">Notification</span></a>
-            <a className="nav-link" href="#"><i className="bi bi-chat-left " /><span className="ms-3 d-sm-inline-block d-md-none">Chat</span></a>
-            <a className="nav-link" href="#"><i className="bi bi-basket" /><span className="ms-3 d-sm-inline-block d-md-none">Account</span></a>
-            <a className="nav-link active" href="#"><i className="bi bi-person-circle" /><span className="ms-3 d-sm-inline-block d-md-none">Account</span></a>
+            <a className="nav-link" href="#"><i className="bi bi-bell" /><span className="ms-3 d-sm-inline-block d-lg-none">Notification</span></a>
+            <a className="nav-link" href="#"><i className="bi bi-chat-left " /><span className="ms-3 d-sm-inline-block d-lg-none">Chat</span></a>
+            <a className="nav-link" href="#"><i className="bi bi-basket" /><span className="ms-3 d-sm-inline-block d-lg-none">Account</span></a>
+            <a className="nav-link active" href="#"><i className="bi bi-person-circle" /><span className="ms-3 d-sm-inline-block d-lg-none">Account</span></a>
           </div>
         </div>
       </div>

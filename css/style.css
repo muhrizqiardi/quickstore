@@ -24,4 +24,14 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
 }
+
+.product-card:hover {
+  -webkit-filter: brightness(85%) !important;
+          filter: brightness(85%) !important;
+}
+
+.product-card:focus {
+  -webkit-filter: brightness(70%) !important;
+          filter: brightness(70%) !important;
+}
 /*# sourceMappingURL=style.css.map */
