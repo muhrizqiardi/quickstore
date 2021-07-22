@@ -1,3 +1,4 @@
 # Quickstore, a fictional ecommerce site made using Next.js and Commerce.js
-![]('./public/assets/brand/Logo Text.png')
+<img height="100" src="./public/assets/brand/Logo Text.svg"/>
+
 ![](./public/assets/readme/Screenshot.png)
