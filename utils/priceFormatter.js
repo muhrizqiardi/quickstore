@@ -1,4 +1,4 @@
-export default new Intl.NumberFormat('en-US', {
+export default new Intl.NumberFormat('id', {
   style: 'currency',
   currency: 'IDR',
 });
