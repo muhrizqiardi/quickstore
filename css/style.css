@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
+body {
+  font-family: "Nunito Sans", "Arial", sans-serif;
+}
+
+.nounderline {
+  text-decoration: none !important;
+}
+
+.product-card {
+  overflow: hidden;
+}
+
+.carousel-item > img {
+  max-height: 300px;
+}
+
+.carousel-control-next {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.carousel-control-prev {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+}
+/*# sourceMappingURL=style.css.map */

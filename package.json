@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "sass": "sass ./styles/style.scss ./styles/style.css --watch",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@chec/commerce.js": "^2.7.2",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
