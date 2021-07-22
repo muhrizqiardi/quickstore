@@ -66,11 +66,13 @@ export default function Home({ merchant, categories, products }) {
             <div className=" p-1 d-flex flex-row align-items-center overflow-auto flex-wrap">
               <span className="me-3">Categories: </span>
               {
-                categories.map(category => <a href="/" className="card p-2 fs-6 text-black-50 nounderline fw-normal me-1 mb-1">{category.name}</a>)
+                categories.map(category => <a href={`/categories/${category.slug}`} className="card p-2 fs-6 text-black-50 nounderline fw-normal me-1 mb-1">{category.name}</a>)
               }
             </div>
           </div>
         </section>
+
+        {/* Product List */}
         <section id="products" className="mb-3">
           <div className="container">
             <h3 className="mb-3">
