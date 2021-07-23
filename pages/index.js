@@ -7,7 +7,7 @@ import commerce from "../lib/commerce";
 
 export default function Home({ merchant, categories, products }) {
   // console.log(products)
-  // console.log(categories)
+  categories ? console.log(categories) : console.log('banana')
   return (
     <>
       <div>
@@ -66,7 +66,7 @@ export default function Home({ merchant, categories, products }) {
             <div className=" p-1 d-flex flex-row align-items-center overflow-auto flex-wrap">
               <span className="me-3">Categories: </span>
               {
-                categories.map(category => <a href={`/categories/${category.slug}`} key={slug} className="card p-2 fs-6 text-black-50 nounderline fw-normal me-1 mb-1">{category.name}</a>)
+                categories.map(category => <a href={`/categories/${category.slug}`} key={category.slug} className="card p-2 fs-6 text-black-50 nounderline fw-normal me-1 mb-1">{category.name}</a>)
               }
             </div>
           </div>

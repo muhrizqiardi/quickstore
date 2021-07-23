@@ -1,4 +1,3 @@
-import Image from 'next/image'
 function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -10,7 +9,7 @@ function Navbar(props) {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="mx-md-auto my-2">
+          <div className="mx-md-auto">
             <div className="input-group">
               <input type="text" className="form-control" placeholder="Search" aria-label="Search store" aria-describedby="button-addon1" />
               <button className="btn btn-outline-light" type="button" id="button-addon1"><i className="bi bi-search" /></button>
