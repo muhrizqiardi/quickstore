@@ -21,6 +21,7 @@ function CategoryPage({ products, category }) {
                   price={product.price.raw}
                   badges={[...product.categories.map(category => category.name)]}
                   permalink={product.permalink}
+                  key={product.permalink}
                 />
               )
             }

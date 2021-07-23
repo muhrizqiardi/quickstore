@@ -6,8 +6,8 @@ import ProductCard from "../components/ProductCard"
 import commerce from "../lib/commerce";
 
 export default function Home({ merchant, categories, products }) {
-  console.log(products)
-  console.log(categories)
+  // console.log(products)
+  // console.log(categories)
   return (
     <>
       <div>
@@ -23,16 +23,16 @@ export default function Home({ merchant, categories, products }) {
               </div>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src="/assets/carousel-img/pandemic.jpg" style={{ filter: "brightness(80%)" }} alt />
-                  <div class="carousel-caption">
+                  <img src="/assets/carousel-img/pandemic.jpg" style={{ filter: "brightness(80%)" }} alt="Pandemic" />
+                  <div className="carousel-caption">
                     <h5>Protect your Loved One</h5>
-                    <p>Let's end this pandemic soon by wearing mask, wash hands regularly, and social distancing.</p>
+                    <p>Let&quot;s end this pandemic soon by wearing mask, wash hands regularly, and social distancing.</p>
                     <button className="btn btn-dark">COVID-19 Products</button>
                   </div>
                 </div>
                 <div className="carousel-item">
                   <img src="/assets/carousel-img/91-1200x300.jpg" style={{ filter: "brightness(80%)" }} alt />
-                  <div class="carousel-caption">
+                  <div className="carousel-caption">
                     <h5>Hungry?</h5>
                     <p>Food and Beverages are available at Quickstore. Check it out!</p>
                     <button className="btn btn-dark">Learn More</button>
@@ -40,7 +40,7 @@ export default function Home({ merchant, categories, products }) {
                 </div>
                 <div className="carousel-item">
                   <img src="/assets/carousel-img/241-1200x300.jpg" style={{ filter: "brightness(80%)" }} alt />
-                  <div class="carousel-caption">
+                  <div className="carousel-caption">
                     <h5>Gadgets</h5>
                     <p>Gadgets are available at Quickstore. </p>
                     <button className="btn btn-dark">Learn More</button>
@@ -66,7 +66,7 @@ export default function Home({ merchant, categories, products }) {
             <div className=" p-1 d-flex flex-row align-items-center overflow-auto flex-wrap">
               <span className="me-3">Categories: </span>
               {
-                categories.map(category => <a href={`/categories/${category.slug}`} className="card p-2 fs-6 text-black-50 nounderline fw-normal me-1 mb-1">{category.name}</a>)
+                categories.map(category => <a href={`/categories/${category.slug}`} key={slug} className="card p-2 fs-6 text-black-50 nounderline fw-normal me-1 mb-1">{category.name}</a>)
               }
             </div>
           </div>
@@ -87,6 +87,7 @@ export default function Home({ merchant, categories, products }) {
                     price={product.price.raw}
                     badges={[...product.categories.map(category => category.name)]}
                     permalink={product.permalink}
+                    key={product.permalink}
                   />
                 )
               }

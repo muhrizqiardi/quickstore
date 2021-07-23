@@ -6,7 +6,10 @@ function ProductCard({ name, price, badges, img, permalink }) {
   return (
     <div className="col">
       <div className="card product-card">
-        {img ? <img src={img} style={{height: 170, objectFit:"cover" }}/> : <svg className="bd-placeholder-img card-img-top" width="100%" height={150} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+        {img ?
+          < img src={img} className="card-img-top" alt={`Product Image of ${name}`} style={{ height: 170, objectFit: "cover" }} />
+        :
+        <svg className="bd-placeholder-img card-img-top" width="100%" height={150} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
           <rect width="100%" height="100%" fill="#55595c" />
         </svg>}
         <div className="card-body">
@@ -15,7 +18,7 @@ function ProductCard({ name, price, badges, img, permalink }) {
             <div className="">
               {
                 badges.map(badge =>
-                  <div className="badge bg-secondary mb-2 me-2">{badge}</div>
+                  <div className="badge bg-secondary mb-2 me-2" key={`badge-${badges.indexOf(badge)}`}>{badge}</div>
                 )
               }
             </div>

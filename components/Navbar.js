@@ -1,9 +1,10 @@
+import Image from 'next/image'
 function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <a href="/" className="navbar-brand">
-          <img src="/assets/brand/Logo Text White.svg" height="50px" alt />
+          <img src="/assets/brand/Logo Text White.svg" height="50px" alt='logo' />
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
