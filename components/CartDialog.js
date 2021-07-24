@@ -36,6 +36,7 @@ function CartDialog({ cart }) {
             <ul className="list-group">
               {cart.line_items.map(item => <CartListItem
                 id={item.id}
+                key={item.id}
                 name={item.name}
                 price={item.price.raw}
                 quantity={item.quantity}
