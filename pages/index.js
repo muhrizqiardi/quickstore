@@ -30,7 +30,7 @@ export default function Home({ merchant, categories, products }) {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img src="/assets/carousel-img/91-1200x300.jpg" style={{ filter: "brightness(80%)" }} alt />
+                  <img src="/assets/carousel-img/91-1200x300.jpg" style={{ filter: "brightness(80%)" }} alt="Carousel Image" />
                   <div className="carousel-caption">
                     <h5>Hungry?</h5>
                     <p>Food and Beverages are available at Quickstore. Check it out!</p>
@@ -38,7 +38,7 @@ export default function Home({ merchant, categories, products }) {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img src="/assets/carousel-img/241-1200x300.jpg" style={{ filter: "brightness(80%)" }} alt />
+                  <img src="/assets/carousel-img/241-1200x300.jpg" style={{ filter: "brightness(80%)" }} alt="Carousel Image"  />
                   <div className="carousel-caption">
                     <h5>Gadgets</h5>
                     <p>Gadgets are available at Quickstore. </p>
