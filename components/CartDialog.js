@@ -15,10 +15,19 @@ function CartDialog() {
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
           </div>
           <div className="modal-body">
-            <CartList/>
+            {
+              cartState.line_items.length > 0 ?
+                <CartList />
+                :
+                <div className="w-100 my-5 text-muted text-center">Cart is empty<br/>¯\_(ツ)_/¯</div>
+          }
           </div>
           <div className="modal-footer">
-            <a type="button" href={cartState.hosted_checkout_url} className="btn btn-dark">Checkout</a>
+            {cartState.line_items.length > 0 ?
+              <a type="button" href={cartState.hosted_checkout_url} className="btn btn-dark">Checkout</a>
+              :
+              <button className="btn btn-dark disabled" disabled>Checkout</button>
+            }
           </div>
         </div>
       </div>

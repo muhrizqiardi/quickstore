@@ -27,7 +27,7 @@ function Navbar(props) {
             <div className="navbar-nav ms-auto">
               <a className="nav-link" href="#"><i className="bi bi-bell" /><span className="ms-3 d-sm-inline-block d-lg-none">Notification</span></a>
               <a className="nav-link" href="#"><i className="bi bi-chat-left " /><span className="ms-3 d-sm-inline-block d-lg-none">Chat</span></a>
-              <a className="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartDialog"><i className="bi bi-basket" /><span className="ms-3 d-sm-inline-block d-lg-none">Cart</span>{cartState && <div className="badge bg-danger ms-2">{cartState.total_items}</div>}</a>
+              <a className={`nav-link ${cartState && (cartState.line_items.length > 0 && "active")}`} href="#" data-bs-toggle="modal" data-bs-target="#cartDialog"><i className="bi bi-basket" /><span className="ms-3 d-sm-inline-block d-lg-none">Cart</span>{cartState &&(cartState.total_items > 0 && <div className="badge bg-danger ms-2">{cartState.total_items}</div>)}</a>
 
               {cartState && <CartDialog cart={cartState} />}
 
