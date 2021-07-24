@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import ProductCard from "../components/ProductCard"
@@ -6,8 +7,6 @@ import ProductCard from "../components/ProductCard"
 import commerce from "../lib/commerce";
 
 export default function Home({ merchant, categories, products }) {
-  // console.log(products)
-  categories ? console.log(categories) : console.log('banana')
   return (
     <>
       <div>
