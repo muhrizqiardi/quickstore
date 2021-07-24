@@ -25,7 +25,7 @@ export default function Home({ merchant, categories, products }) {
                   <img src="/assets/carousel-img/pandemic.jpg" style={{ filter: "brightness(80%)" }} alt="Pandemic" />
                   <div className="carousel-caption">
                     <h5>Protect your Loved One</h5>
-                    <p>Let&quot;s end this pandemic soon by wearing mask, wash hands regularly, and social distancing.</p>
+                    <p>Let&apos;s end this pandemic soon by wearing mask, wash hands regularly, and social distancing.</p>
                     <button className="btn btn-dark">COVID-19 Products</button>
                   </div>
                 </div>

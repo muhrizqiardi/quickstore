@@ -128,7 +128,7 @@ function Checkout() {
                     {/* billing address 2 */}
                     <div className="col-12">
                       <label htmlFor="billingAddress2" className="form-label">Address 2 <span className="text-muted">(Optional)</span></label>
-                      <input type="text" className="form-control" id="billingAddress2" id="billingAddress2" placeholder="Apartment or suite" />
+                      <input type="text" className="form-control" name="billingAddress2" id="billingAddress2" placeholder="Apartment or suite" />
                     </div>
 
                     {/* billing country */}
@@ -190,7 +190,7 @@ function Checkout() {
                         <option value="CD">Congo, Democratic Republic of the Congo</option>
                         <option value="CK">Cook Islands</option>
                         <option value="CR">Costa Rica</option>
-                        <option value="CI">Cote D'Ivoire</option>
+                        <option value="CI">Cote D&apos;Ivoire</option>
                         <option value="HR">Croatia</option>
                         <option value="CU">Cuba</option>
                         <option value="CW">Curacao</option>
@@ -253,12 +253,12 @@ function Checkout() {
                         <option value="KZ">Kazakhstan</option>
                         <option value="KE">Kenya</option>
                         <option value="KI">Kiribati</option>
-                        <option value="KP">Korea, Democratic People's Republic of</option>
+                        <option value="KP">Korea, Democratic People&apos;s Republic of</option>
                         <option value="KR">Korea, Republic of</option>
                         <option value="XK">Kosovo</option>
                         <option value="KW">Kuwait</option>
                         <option value="KG">Kyrgyzstan</option>
-                        <option value="LA">Lao People's Democratic Republic</option>
+                        <option value="LA">Lao People&apos;s Democratic Republic</option>
                         <option value="LV">Latvia</option>
                         <option value="LB">Lebanon</option>
                         <option value="LS">Lesotho</option>
@@ -469,7 +469,7 @@ function Checkout() {
                     {/* shipping address 2 */}
                     <div className="col-12">
                       <label htmlFor="address2" className="form-label">Address 2 <span className="text-muted">(Optional)</span></label>
-                      <input type="text" className="form-control" id="shippingAddress2" id="shippingAddress2" placeholder="Apartment or suite" />
+                      <input type="text" className="form-control" name="shippingAddress2" id="shippingAddress2" placeholder="Apartment or suite" />
                     </div>
 
                     {/* shipping country */}
@@ -531,7 +531,7 @@ function Checkout() {
                         <option value="CD">Congo, Democratic Republic of the Congo</option>
                         <option value="CK">Cook Islands</option>
                         <option value="CR">Costa Rica</option>
-                        <option value="CI">Cote D'Ivoire</option>
+                        <option value="CI">Cote D&apos;Ivoire</option>
                         <option value="HR">Croatia</option>
                         <option value="CU">Cuba</option>
                         <option value="CW">Curacao</option>
@@ -594,12 +594,12 @@ function Checkout() {
                         <option value="KZ">Kazakhstan</option>
                         <option value="KE">Kenya</option>
                         <option value="KI">Kiribati</option>
-                        <option value="KP">Korea, Democratic People's Republic of</option>
+                        <option value="KP">Korea, Democratic People&apos;s Republic of</option>
                         <option value="KR">Korea, Republic of</option>
                         <option value="XK">Kosovo</option>
                         <option value="KW">Kuwait</option>
                         <option value="KG">Kyrgyzstan</option>
-                        <option value="LA">Lao People's Democratic Republic</option>
+                        <option value="LA">Lao People&apos;s Democratic Republic</option>
                         <option value="LV">Latvia</option>
                         <option value="LB">Lebanon</option>
                         <option value="LS">Lesotho</option>
