@@ -14,12 +14,23 @@ export function CartProvider(props) {
     commerce.cart.add(productToAdd, quantity).then(response => callback(response));
   }
 
+  const removeItem = (itemToRemove, callback) => {
+    commerce.cart.remove(itemToRemove).then(response => callback(response));
+  }
+
   useEffect(() => {
     commerce.cart.retrieve().then(cart => setCartState(cart));
   }, []);
 
   return (
-    <CartContext.Provider value={{cartState, refreshCart, addToCart}}>
+    <CartContext.Provider
+      value={{
+        cartState,
+        refreshCart,
+        addToCart,
+        removeItem,
+      }}
+    >
       {props.children}
     </CartContext.Provider>
   );

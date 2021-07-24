@@ -1,29 +1,11 @@
-import formatter from '../utils/priceFormatter'
-import commerce from "../lib/commerce";
-import { useContext } from 'react';
+import CartList from './CartList'
+import { useContext, useEffect } from 'react';
 import CartContext from '../context/Cart';
-
-function CartListItem({ id, name, price, quantity }) {
-  const { refreshCart } = useContext(CartContext);
-
-  const removeItem = (itemToRemove) => {
-    commerce.cart.remove(itemToRemove).then(() => refreshCart());
-  }
-  return (
-    <li className="list-group-item d-flex justify-content-between align-items-center">
-      <div className="w-75">
-        <div>{name}</div>
-        <div className="text-secondary">{formatter.format(price)}</div>
-      </div>
-      <div className="w-25">
-        <span className="badge bg-dark rounded-pill me-3">x{quantity}</span>
-        <button onClick={() => removeItem(id)} className="btn btn-danger"><i className="bi bi-trash"></i></button>
-      </div>
-    </li>
-  )
-}
-
-function CartDialog({ cart }) {
+function CartDialog() {
+  const { cartState, refreshCart } = useContext(CartContext);
+  useEffect(() => {
+    refreshCart();
+  }, []);
   return (
     <div className="modal fade" id="cartDialog" tabIndex={-1} aria-labelledby="cartDialog" aria-hidden="true">
       <div className="modal-dialog">
@@ -33,22 +15,10 @@ function CartDialog({ cart }) {
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
           </div>
           <div className="modal-body">
-            <ul className="list-group">
-              {cart.line_items.map(item => <CartListItem
-                id={item.id}
-                key={item.id}
-                name={item.name}
-                price={item.price.raw}
-                quantity={item.quantity}
-              />)}
-              <li className="list-group-item d-flex justify-content-between align-items-center">
-                <div className="fw-bold">Total:</div>
-                <div className="">{cart && formatter.format(cart.subtotal.raw)}</div>
-              </li>
-            </ul>
+            <CartList/>
           </div>
           <div className="modal-footer">
-            <button type="button" className="btn btn-dark">Checkout</button>
+            <a type="button" href={cartState.hosted_checkout_url} className="btn btn-dark">Checkout</a>
           </div>
         </div>
       </div>
